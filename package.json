@@ -1,0 +1,31 @@
+{
+  "name": "dinky-bot",
+  "version": "1.0.0",
+  "description": "A bot to summon Dinky when detecting \"Komsi Komsi Dinky\"",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "test",
+    "start": "tsc && node dist/index.js",
+    "joinServer": "firefox 'https://discord.com/oauth2/authorize?client_id=861651512723374141&scope=bot+applications.commands'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ludegra/Dinky-Bot.git"
+  },
+  "keywords": [
+    "Dinky",
+    "Bot"
+  ],
+  "author": "Ludwig Granstedt",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/ludegra/Dinky-Bot/issues"
+  },
+  "homepage": "https://github.com/ludegra/Dinky-Bot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3"
+  },
+  "devDependencies": {
+    "@types/node": "^16.0.0"
+  }
+}
