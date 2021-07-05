@@ -20,7 +20,7 @@ client.on("message", (message) => {
             let embed = new MessageEmbed()
                 .setColor(message.member?.roles.color?.color.toString(16) as string)
                 .setAuthor(message.author.tag, message.author.avatarURL() as string)
-                .setDescription(`${message.content}\n[link](${message.url})`)
+                .setDescription(`${message.content}\n\n[link](${message.url})`)
                 .setTimestamp();
             user.send("You have been summoned!", embed);
         });
