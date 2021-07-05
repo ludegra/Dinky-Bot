@@ -1,6 +1,6 @@
 import { Client, MessageEmbed } from "discord.js";
 
-const { token, dinky } = require("../config.json"); // config file with your token
+const dinky = process.env.DINKY as string;
 
 const client = new Client();
 
@@ -27,5 +27,4 @@ client.on("message", (message) => {
     }
 })
 
-client.login(token);
-// random comment
+client.login();
